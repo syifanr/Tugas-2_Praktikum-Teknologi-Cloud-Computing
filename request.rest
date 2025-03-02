@@ -1,0 +1,22 @@
+GET http://localhost:5000/notes
+
+###
+POST http://localhost:5000/add-notes
+Content-Type: application/json
+
+{
+    "Title": "Curhat Today",
+    "Content": "Capek sekali ya semester 6"
+}
+
+###
+PUT http://localhost:5000/edit-notes/1
+Content-Type: application/json
+
+{
+    "Title": "Catatan Harianku",
+    "Content": "Hari Ini Kuliah" 
+}
+
+###
+DELETE http://localhost:5000/delete-notes/2
